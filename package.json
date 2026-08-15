@@ -1,0 +1,10 @@
+{
+  "name": "dsh-anchored-standard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Anchored Standard preset: keep Minimal's complete system prompt, bootstrap shell/read, then expose the full Standard tool catalog.",
+  "scripts": {
+    "test": "node --test"
+  }
+}

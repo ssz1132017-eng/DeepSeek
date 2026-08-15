@@ -39,6 +39,10 @@ export function apply(ctx, config) {
     }
 
     const bootstrap = new Set([...selectedShells, ...commonTools])
+
+    // Keep Minimal's complete system prompt intact: only the tool surface is
+    // reduced for the first request; every other assembled field (including
+    // the full system prompt) must pass through unchanged.
     return {
       ...assembled,
       tools: assembled.tools.filter(tool => bootstrap.has(tool.name)),

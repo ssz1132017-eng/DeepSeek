@@ -1,1 +1,4 @@
-﻿demo.ps1
+demo.ps1
+# 本地技能密钥文件，不要提交
+.dsh/skills/*/config.json
+
